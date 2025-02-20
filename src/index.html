@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Kill Mr Alphonse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/sql-wasm.js"></script>
+    <script src="cm/codemirror.min.js"></script>
+    <script src="cm/show-hint.min.js"></script>
+    <script src="cm/sql-hint.min.js"></script>
+    <script src="cm/sql.min.js"></script>
+    <link rel="stylesheet" href="cm/codemirror.min.css">
+    <link rel="stylesheet" href="cm/monokai.min.css">
+    <link rel="stylesheet" href="cm/show-hint.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Who Kill Mr Alphonse</h1>
+    <p class="help"><span title="Show all tables : SELECT name FROM sqlite_master WHERE type = 'table'">?</span></p>
+    <textarea id="sql-editor">SELECT * FROM persons;</textarea><br>
+    <button onclick="executeSQL()">Run Query (F5)</button>
+    <br>
+    <select id="culprit-name" name="culprit-name">
+        <!-- Options will be populated dynamically from the database -->
+    </select>
+    <label for="culprit-name"> kill Mr Alphonse</label>
+    <br>
+    <button onclick="validateCulprit()">Resolve the investigation</button>
+    <br>
+    <div id="output"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

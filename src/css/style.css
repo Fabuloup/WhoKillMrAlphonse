@@ -1,0 +1,63 @@
+body
+{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #f8f8f2;
+    background-color: #171812;
+}
+
+table
+{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td
+{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #1e1f17;
+}
+
+select
+{
+    margin: 20px 0;
+}
+
+button
+{
+    background-color: #f92672;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 10px;
+}
+
+.CodeMirror {
+    width: 80%;
+    height: 200px;
+    border: 1px solid #ddd;
+    margin: auto;
+    text-align: left;
+}
+
+.help
+{
+    text-align: left;
+}
+
+.help span
+{
+    background-color: #49483e;
+    border-radius: 100%;
+    padding: 5px 10px;
+}
+
+#output {
+    margin-top: 10px;
+}
